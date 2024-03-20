@@ -1,4 +1,6 @@
 class LinksController < ApplicationController
+  before_action :set_link, only: [:show]
+
   def index
     @links = Link.recent_first
   end
@@ -12,6 +14,8 @@ class LinksController < ApplicationController
       render :index, status: :unprocessable_entity
     end
   end
+
+  def show ; end
 
   private
 
