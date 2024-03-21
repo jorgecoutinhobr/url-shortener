@@ -12,8 +12,14 @@
 
   <body>
     <%= render partial: 'shared/navbar'%>
-    <div class="container mx-auto mt-28 px-5 flex justify-center flex-col">
+
+    <div class="container mx-auto mt-20 px-8"> 
+
+      <%= render partial: 'shared/alert' if alert.present? %>
+      <%= render partial: 'shared/notice' if notice.present? %>
+
       <%= yield %>
+
     </div>
   </body>
 </html>

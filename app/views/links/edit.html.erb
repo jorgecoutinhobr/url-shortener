@@ -1,0 +1,8 @@
+<h1 class="text-6xl font-bold leading-normal mt-0 text-indigo-500">Edit</h1>
+
+<%= render partial: 'form', locals: { link: @link } %>
+
+<div class="flex gap-1 items-center mt-4">
+  <%= link_to "Cancel", @link, class: 'bg-purple-500 text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' %>
+  <%= button_to "Delete", @link, method: :delete, data: { turbo_confirm: "Are you sure?" }, class: 'bg-indigo-500 text-white active:bg-indigo-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' %>
+</div>
