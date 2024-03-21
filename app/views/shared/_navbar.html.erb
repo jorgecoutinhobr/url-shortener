@@ -10,21 +10,18 @@
     </div>
     <div class="lg:flex flex-grow items-center" id="example-navbar-warning">
       <ul class="flex flex-col lg:flex-row list-none ml-auto">
+          <% if user_signed_in? %>
+           <li class="nav-item">
+            <%= link_to 'Log out', destroy_user_session_path, class: 'px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75', method: :get %>
+          </li>
+          <% else %>
           <li class="nav-item">
-            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-              Discover
-            </a>
+            <%= link_to 'Sign up', new_user_registration_path, class: 'px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75' %>
           </li>
           <li class="nav-item">
-            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-              Profile
-            </a>
+            <%= link_to 'Log in', new_user_session_path, class: 'px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75' %>
           </li>
-          <li class="nav-item">
-            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-              Setting
-            </a>
-          </li>
+          <% end %>
       </ul>
     </div>
   </div>

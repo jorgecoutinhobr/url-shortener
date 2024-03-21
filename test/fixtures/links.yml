@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  url: MyString
-  title: MyString
-  description: MyString
-  image: MyString
+  url: https://gorails.com
+  title: GoRails
+  description:  Description of GoRails
+  image: 
   views_count: 1
 
 two:
-  url: MyString
-  title: MyString
-  description: MyString
-  image: MyString
-  views_count: 1
+  url: https://google.com
+  title: Google
+  description: Description of Google
+  image:
+  views_count: 2
