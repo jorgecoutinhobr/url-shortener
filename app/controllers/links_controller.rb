@@ -9,7 +9,13 @@ class LinksController < ApplicationController
   def create
     @link = Link.new(link_params)
     if @link.save
-      redirect_to root_path
+      respond_to do |format|
+        format.html { redirect_to @link }
+        format.turbo_stream { render turbo_stream: [
+          turbo_stream.prepend("links", @link),
+          turbo_stream.replace("link_form", partial: "links/form", locals: { link: Link.new })
+        ] }
+      end
     else
       @links = Link.recent_first # caso o link não seja salvo, a lista de links é renderizada novamente
       render :index, status: :unprocessable_entity
