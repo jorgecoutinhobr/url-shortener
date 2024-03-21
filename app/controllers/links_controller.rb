@@ -3,7 +3,7 @@ class LinksController < ApplicationController
   before_action :check_if_editable, only: [:edit, :update, :destroy]
 
   def index
-    @links = Link.recent_first
+    @pagy, @links = pagy(Link.recent_first, items: 10)
     @link ||= Link.new 
   end
 
@@ -18,7 +18,7 @@ class LinksController < ApplicationController
         ] }
       end
     else
-      @links = Link.recent_first # caso o link não seja salvo, a lista de links é renderizada novamente
+      index # caso o link não seja salvo, a lista de links é renderizada novamente
       render :index, status: :unprocessable_entity
     end
   end
