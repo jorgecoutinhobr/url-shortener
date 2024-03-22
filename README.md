@@ -1,24 +1,16 @@
-# README
+# URL Shortener
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto de URL Shortener desenvolvido com Rails 7 e Tailwind CSS.
 
-Things you may want to cover:
+## Objetivo
 
-* Ruby version
+O objetivo deste projeto é fornecer uma aplicação simples de encurtamento de URL para estudo e aprendizado de Rails 7, bem como para explorar a integração com o framework CSS Tailwind.
 
-* System dependencies
+## Funcionalidades
 
-* Configuration
+- Encurtamento de URLs longas.
+- Redirecionamento de URLs encurtadas para URLs originais.
+- Interface de usuário amigável usando Tailwind CSS.
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
