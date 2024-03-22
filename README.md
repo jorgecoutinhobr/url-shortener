@@ -1,16 +1,17 @@
 # URL Shortener
 
-Este é um projeto de URL Shortener desenvolvido com Rails 7 e Tailwind CSS.
+This is a URL Shortener project developed with Rails 7 and Tailwind CSS
 
-## Objetivo
+## Objective
 
-O objetivo deste projeto é fornecer uma aplicação simples de encurtamento de URL para estudo e aprendizado de Rails 7, bem como para explorar a integração com o framework CSS Tailwind.
+The objective of this project is to provide a simple URL shortening application for studying and learning Rails 7, as well as exploring integration with the Tailwind CSS framework
 
-## Funcionalidades
+## Features
 
-- Encurtamento de URLs longas.
-- Redirecionamento de URLs encurtadas para URLs originais.
-- Interface de usuário amigável usando Tailwind CSS.
+- Shortening of long URLs
+- Redirecting shortened URLs to original URLs
+- User-friendly interface using Tailwind CSS
+
 
 
 
