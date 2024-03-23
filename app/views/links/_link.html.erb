@@ -2,7 +2,6 @@
   <%= turbo_stream_from link %>
 
   <div class="grid grid-cols-8 py-4">
-    <%#= link_to link.to_param, link %>
 
     <div class='col-span-5'>
       <%= link_to view_path(link), target: :_blank, data: { turbo: false } do %>
@@ -15,7 +14,7 @@
       <% end %>
     </div>  
 
-    <div class='col-span-2 text-center text-sm'>
+    <div class='col-span-2 text-center text-sm mt-1.5'>
       <%= link_to pluralize(link.views_count, 'view'), link, class: 'bg-purple-500 text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' %>
     </div>
 

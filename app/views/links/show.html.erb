@@ -3,7 +3,7 @@
 <div class="grid grid-cols-2 p-2 bg-gray-200 shadow rounded-lg mb-4">
   <div class="text-xl text-blue-600 mb-2">
     <%= image_tag "https://www.google.com/s2/favicons?domain=#{@link.domain}", class: 'inline-block h-6'%>
-    <%= link_to "#{@link.url}", view_path(@link) %>
+    <%= link_to "#{@link.url}", view_path(@link), target: :_blank, data: { turbo: false } %>
   </div>
   <div class="text-xl text-gray-700">
     <%= pluralize(@link.views_count, 'view') %>
