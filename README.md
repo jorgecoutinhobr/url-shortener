@@ -10,7 +10,7 @@ The objective of this project is to provide a simple URL shortening application 
 
 - Shortening of long URLs
 - Redirecting shortened URLs to original URLs
-- User-friendly interface using Tailwind CSS
+- User interface using Tailwind CSS
 
 
 
