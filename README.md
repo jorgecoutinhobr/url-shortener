@@ -12,6 +12,5 @@ The objective of this project is to provide a simple URL shortening application 
 - Redirecting shortened URLs to original URLs
 - User interface using Tailwind CSS
 
-
-
+- commit test
 
