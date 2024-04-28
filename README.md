@@ -13,4 +13,4 @@ The objective of this project is to provide a simple URL shortening application 
 - User interface using Tailwind CSS
 
 
-- commit test p/github remoto
+- commit test p/github remoto nova branch
